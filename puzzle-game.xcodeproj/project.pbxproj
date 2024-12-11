@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		9FD5435C2D0A404800F83DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5435B2D0A404800F83DA1 /* AppDelegate.swift */; };
 		9FD5435E2D0A404800F83DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5435D2D0A404800F83DA1 /* SceneDelegate.swift */; };
-		9FD543602D0A404800F83DA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5435F2D0A404800F83DA1 /* ViewController.swift */; };
 		9FD543632D0A404800F83DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD543612D0A404800F83DA1 /* Main.storyboard */; };
 		9FD543652D0A404900F83DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD543642D0A404900F83DA1 /* Assets.xcassets */; };
 		9FD543682D0A404900F83DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD543662D0A404900F83DA1 /* LaunchScreen.storyboard */; };
 		9FD543732D0A404900F83DA1 /* puzzle_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD543722D0A404900F83DA1 /* puzzle_gameTests.swift */; };
 		9FD5437D2D0A404900F83DA1 /* puzzle_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5437C2D0A404900F83DA1 /* puzzle_gameUITests.swift */; };
 		9FD5437F2D0A404900F83DA1 /* puzzle_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5437E2D0A404900F83DA1 /* puzzle_gameUITestsLaunchTests.swift */; };
+		9FD5438D2D0A40B300F83DA1 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5438C2D0A40B300F83DA1 /* Puzzle.swift */; };
+		9FD543902D0A40F000F83DA1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD5438F2D0A40F000F83DA1 /* PuzzleViewController.swift */; };
+		9FD543932D0A411F00F83DA1 /* PuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD543922D0A411F00F83DA1 /* PuzzleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		9FD543582D0A404800F83DA1 /* puzzle-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "puzzle-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD5435B2D0A404800F83DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD5435D2D0A404800F83DA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FD5435F2D0A404800F83DA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FD543622D0A404800F83DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FD543642D0A404900F83DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD543672D0A404900F83DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		9FD543782D0A404900F83DA1 /* puzzle-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "puzzle-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD5437C2D0A404900F83DA1 /* puzzle_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzle_gameUITests.swift; sourceTree = "<group>"; };
 		9FD5437E2D0A404900F83DA1 /* puzzle_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzle_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FD5438C2D0A40B300F83DA1 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		9FD5438F2D0A40F000F83DA1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
+		9FD543922D0A411F00F83DA1 /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		9FD5435A2D0A404800F83DA1 /* puzzle-game */ = {
 			isa = PBXGroup;
 			children = (
+				9FD543912D0A410300F83DA1 /* ViewModel */,
+				9FD5438E2D0A40CF00F83DA1 /* ViewController */,
+				9FD5438B2D0A407C00F83DA1 /* Model */,
 				9FD5435B2D0A404800F83DA1 /* AppDelegate.swift */,
 				9FD5435D2D0A404800F83DA1 /* SceneDelegate.swift */,
-				9FD5435F2D0A404800F83DA1 /* ViewController.swift */,
 				9FD543612D0A404800F83DA1 /* Main.storyboard */,
 				9FD543642D0A404900F83DA1 /* Assets.xcassets */,
 				9FD543662D0A404900F83DA1 /* LaunchScreen.storyboard */,
@@ -125,6 +131,30 @@
 				9FD5437E2D0A404900F83DA1 /* puzzle_gameUITestsLaunchTests.swift */,
 			);
 			path = "puzzle-gameUITests";
+			sourceTree = "<group>";
+		};
+		9FD5438B2D0A407C00F83DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5438C2D0A40B300F83DA1 /* Puzzle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD5438E2D0A40CF00F83DA1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FD5438F2D0A40F000F83DA1 /* PuzzleViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9FD543912D0A410300F83DA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FD543922D0A411F00F83DA1 /* PuzzleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD543602D0A404800F83DA1 /* ViewController.swift in Sources */,
+				9FD543902D0A40F000F83DA1 /* PuzzleViewController.swift in Sources */,
+				9FD543932D0A411F00F83DA1 /* PuzzleViewModel.swift in Sources */,
+				9FD5438D2D0A40B300F83DA1 /* Puzzle.swift in Sources */,
 				9FD5435C2D0A404800F83DA1 /* AppDelegate.swift in Sources */,
 				9FD5435E2D0A404800F83DA1 /* SceneDelegate.swift in Sources */,
 			);
